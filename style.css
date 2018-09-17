@@ -10,7 +10,7 @@
 	font-size:18px;
 }
 	.interim {
-		color: #555;
+		color: #222;
 	}
 #buttons {
 	text-align:center;
@@ -21,17 +21,14 @@ button {
 	padding:15px 20px;
 	text-transform: uppercase;
 	font-weight: bold;
-	background-color:#222;
-	color:white;
-	border:1px solid white;
+	background-color:transparent;
+	color:#222;
+	border:1px solid #222;
 }
 button:hover {
-	background-color:white;
-	color:#222;
+	background-color:#222;
+	color:white;
 }
 button:active {
 	box-shadow:0 0 5px #555;
-}
-body {
-	background-color:#222;
 }

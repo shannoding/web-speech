@@ -11,6 +11,13 @@ document.getElementById("start").addEventListener("click", function() {
 document.getElementById("stop").addEventListener("click", function() {
 	recognition.stop();
 });
+document.getElementById("playback").addEventListener("click",function() {
+  var synth = window.speechSynthesis;
+  for (var i = 0; i < transcript_archive.length; i++) {
+    var utterThis = new SpeechSynthesisUtterance(transcript_archive[i]);
+    synth.speak(utterThis);
+  }
+});
 
 if (!('webkitSpeechRecognition' in window)) {
   console.log("update");
